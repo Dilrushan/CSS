@@ -1,0 +1,98 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/* margin is out the container
+inside padding
+box-sizing : border-box is used to prevent from auto alignment
+flex is used align the content
+flex will change the column into row
+justify-content y
+align-items x
+ */
+.container
+{
+    height: 100vh;
+    width:100vw;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* y - direction*/
+    align-items: center;/* x - direction*/
+}
+.navbar
+{
+    position: absolute;
+    top: 0px;
+    height: 10vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    align-items: center;/* y - direction*/
+    gap: 20px;
+    justify-content: end;/* x - direction*/
+    padding-right: 20px;
+    color: orangered;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.login{
+    width: 400px;
+    height: 500px;
+    background-color:white ;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* y - direction*/
+    align-items: center;/* x direction*/
+    gap: 20px;
+    /* font-size: 20px;
+    font-weight: bold; */
+    box-shadow: 3px 3px 10px black, -3px -3px 10px black;/* box-shadow: x-direction , y-direction, blur, color*/
+}
+
+.inp{
+    width:300px ;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.inp-details{
+    font-size: 20px;
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn{
+    width: 180px;
+    height: 35px;
+    background-color: orangered;
+    border: none;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+}
+
+.submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px ;
+}
+
+.anchor{
+    text-decoration: none;
+}
